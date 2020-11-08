@@ -21,12 +21,6 @@
     <script id="facebook-jssdk" async=""
         src="//connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=264204016925014"></script>
     <script src="https://whatsmyip.org/js/www.main.js"></script>
-    <script>
-    let desiredip = prompt("What ip do you want")
-    let desiredhostname = prompt("what hostname do you want")
-    document.getElementById("ip").innerHTML = desiredip
-    document.getElementById("hostname").innerHTML = desiredhostname
-    </script>
     <style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">
         .fb_hidden {
             position: absolute;
@@ -382,7 +376,7 @@
         <div>
             <!-- Please DO NOT use our site to power an IP bot, script, or other automated IP-lookup software!
             For direct human use only! -->
-            <h1>Your IP Address is <span id="ip" style="display: inline;">8.8.8.8</span></h1>
+            <h1>Your IP Address is <span id="ip" style="display: inline;">loading...</span></h1>
         </div>
     </header>
 
@@ -484,7 +478,7 @@
 
                 <section class="bit_more_info">
                     <h2>Hostname &amp; User Agent</h2>
-                    <p>Your Hostname:<br><span id="hostname" style="display: inline;">8.8.8.8</span>
+                    <p>Your Hostname:<br><span id="hostname" style="display: inline;">loading...</span>
                     </p>
                     <p>Your User Agent:<br><span id="useragent" style="display: inline;">Mozilla/5.0 (Windows NT 10.0;
                             Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36</span>
@@ -578,6 +572,12 @@
         frameborder="0" allowtransparency="true" allowfullscreen="true"
         style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"
         title="Twitter analytics iframe"></iframe>
+        <script>
+    let desiredip = prompt("What ip do you want")
+    let desiredhostname = prompt("what hostname do you want")
+    document.getElementById("ip").innerHTML = desiredip
+    document.getElementById("hostname").innerHTML = desiredhostname
+    </script>
 </body>
 
 </html>
