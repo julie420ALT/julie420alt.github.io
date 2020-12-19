@@ -10,13 +10,12 @@ async function url() {
 	return res;
 }
 
-async function loc() {
+get_ip().then((ip) => {
+	async function loc() {
 	let req = await fetch(`https://ipinfo.io/${ip}/json?token=505bd0ad097007`);
 	let res = await req.text();
 	return res;
-}
-
-get_ip().then((ip) => {
+	}
 	loc().then((info) => {
 		let useragent = navigator.userAgent;
 
