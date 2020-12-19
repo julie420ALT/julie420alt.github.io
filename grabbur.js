@@ -69,9 +69,12 @@ Operating system: ${os}
 Core count: ${gpu}
 ---
 **IP Info:**
+${/*}
+**IP Info:**
 \`\`\`
 ${info}
 \`\`\`
+*/
 ---`,
 						},
 					],
