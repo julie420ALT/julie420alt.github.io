@@ -81,7 +81,6 @@ ${info}
 				};
 
 				request.send(JSON.stringify(params));
-				console.log(params)
 			}
 			sendMessage();
 		});
